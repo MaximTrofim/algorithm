@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 public class Main2 {
 
     public static void main(String[] args) {
-        final int capacity = 500000;
+        final int capacity = 1000;
 
         Array<Integer> array = new ArrayImpl<>(capacity);
         Array<Integer> array2 = new ArrayImpl<>(capacity);
