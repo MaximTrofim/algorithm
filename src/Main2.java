@@ -7,7 +7,7 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class Main2 {
-    final static int capacity = 1000;
+    final static int capacity = 10000;
     public static void main(String[] args) {
 
 
