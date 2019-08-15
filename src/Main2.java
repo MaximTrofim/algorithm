@@ -7,20 +7,15 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class Main2 {
-    final static int capacity = 10000;
+    final static int capacity = 100000;
     public static void main(String[] args) {
-
 
         Array<Integer> array = new ArrayImpl<>(capacity);
         Array<Integer> array2 = new ArrayImpl<>(capacity);
         Array<Integer> array3 = new ArrayImpl<>(capacity);
-
         //заполняем массивы случайными данными
-
         random(array,array2,array3);
-        array.display();
-        array2.display();
-        array3.display();
+
         //final Random random = new Random();
 
 //        for (int i = 0; i < capacity; i++) {
@@ -29,9 +24,7 @@ public class Main2 {
 //            array2.add(val);
 //            array3.add(val);
 //        }
-//        array.display();
-//        array2.display();
-//        array3.display();
+
 //        for (int i = 0; i < capacity; i++) {
 //            array2.add(random.nextInt(capacity));
 //        }
