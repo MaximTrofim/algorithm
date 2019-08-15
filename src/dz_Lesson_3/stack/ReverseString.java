@@ -1,7 +1,7 @@
 package dz_Lesson_3.stack;
 
 public class ReverseString {
-    static String str = "";
+    static String str = "польская запись";
 
     public static void main(String[] args) {
         new ReverseString(str).reverse();
