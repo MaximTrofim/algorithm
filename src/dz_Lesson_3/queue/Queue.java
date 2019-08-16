@@ -11,4 +11,8 @@ public interface Queue<E> extends ICollection {
 
     E peek();
 
+    E removeRight();
+
+    boolean insertLeft (E value);
+
 }

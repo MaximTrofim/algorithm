@@ -8,8 +8,8 @@ public class QueueImpl<E> implements Queue<E> {
     protected final E[] data;
     protected int size;
 
-    private int tail;
-    private int head;
+    protected int tail;
+    protected int head;
 
     @SuppressWarnings("unchecked")
     public QueueImpl(int maxCapacity) {
@@ -65,5 +65,15 @@ public class QueueImpl<E> implements Queue<E> {
     @Override
     public boolean isFull() {
         return size == data.length;
+    }
+    //заглушка
+    @Override
+    public E removeRight() {
+        return null;
+    }
+    //заглушка
+    @Override
+    public boolean insertLeft(E value) {
+        return true;
     }
 }
