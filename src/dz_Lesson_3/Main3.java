@@ -1,6 +1,5 @@
 package dz_Lesson_3;
 
-
 import dz_Lesson_3.queue.Dequeue;
 import dz_Lesson_3.stack.Stack;
 import dz_Lesson_3.stack.StackImpl;
@@ -14,10 +13,6 @@ public class Main3 {
 //        Queue<Integer> queue = new PriorityQueue<>(5);
 //        queue.insert(3);
 //        queue.insert(1);
-//        queue.insert(2);
-//        queue.insert(6);
-//        queue.insert(5);
-//        queue.insert(4);
 //        System.out.println("Top of queue is " + queue.peek());
 //        System.out.println("queue size is " + queue.size());
 //
@@ -27,9 +22,7 @@ public class Main3 {
 //        Stack<Integer> stack = new StackImpl<>(5);
 //        stack.push(1);
 //        stack.push(2);
-//        stack.push(3);
-//        stack.push(4);
-//        stack.push(5);
+
 //        System.out.println(stack.size());
 //        stack.pop();
 //        System.out.println(stack.size());
@@ -63,9 +56,7 @@ public class Main3 {
         dequeue.insertLeft(1000);
         dequeue.insertLeft(2000);
         dequeue.removeLeft();
-        dequeue.removeLeft();
-        dequeue.removeLeft();
-        dequeue.removeLeft();
+        dequeue.removeRight();
 
         System.out.println("dequeue size is " + dequeue.size());
         System.out.println("______________");
@@ -73,6 +64,4 @@ public class Main3 {
             System.out.println(dequeue.removeLeft());
         }
     }
-
-
 }
