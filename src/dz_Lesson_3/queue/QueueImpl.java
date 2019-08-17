@@ -2,8 +2,8 @@ package dz_Lesson_3.queue;
 
 public class QueueImpl<E> implements Queue<E> {
 
-    private static final int DEFAULT_TAIL = -1;
-    private static final int DEFAULT_HEAD = 0;
+    protected static final int DEFAULT_TAIL = -1;
+    protected static final int DEFAULT_HEAD = 0;
 
     protected final E[] data;
     protected int size;
@@ -65,15 +65,5 @@ public class QueueImpl<E> implements Queue<E> {
     @Override
     public boolean isFull() {
         return size == data.length;
-    }
-    //заглушка
-    @Override
-    public E removeRight() {
-        return null;
-    }
-    //заглушка
-    @Override
-    public boolean insertLeft(E value) {
-        return true;
     }
 }

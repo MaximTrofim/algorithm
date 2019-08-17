@@ -1,6 +1,7 @@
 package dz_Lesson_3;
 
-import dz_Lesson_3.queue.Dequeue;
+import dz_Lesson_3.dequeue.Dequeue;
+import dz_Lesson_3.dequeue.DequeueImpl;
 import dz_Lesson_3.stack.Stack;
 import dz_Lesson_3.stack.StackImpl;
 
@@ -46,7 +47,7 @@ public class Main3 {
         }
     }
     private static void testDequeue(int maxCapacity){
-        Dequeue<Integer> dequeue = new Dequeue<>(maxCapacity);
+        Dequeue<Integer> dequeue = new DequeueImpl<>(10);
 
         dequeue.insertRight(100);
         dequeue.insertRight(200);
@@ -58,7 +59,7 @@ public class Main3 {
         dequeue.removeLeft();
         dequeue.removeRight();
 
-        System.out.println("dequeue size is " + dequeue.size());
+        System.out.println("dz_Lesson_3.dequeue size is " + dequeue.size());
         System.out.println("______________");
         while ( !dequeue.isEmpty() ) {
             System.out.println(dequeue.removeLeft());
