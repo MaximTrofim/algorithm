@@ -2,11 +2,10 @@ package dz_lesson_4.linkedList;
 
 import java.util.Iterator;
 
-public class SimpleLinkedListImpl<E> implements LinkedList<E> {
+public class SimpleLinkedListImpl<E> implements LinkedList<E>, Iterable<E> {
 
     protected Node<E> firstElement;//001[007]
     protected int size;
-
 
     //O(1)
     @Override
@@ -110,6 +109,29 @@ public class SimpleLinkedListImpl<E> implements LinkedList<E> {
 
     @Override
     public Iterator<E> iterator() {
-        return null;
+        return new Iterator<E>() {
+
+            Node<E> current = firstElement;
+
+            @Override
+            public boolean hasNext() {
+                return current != null;
+            }
+
+            @Override
+            public E next() {
+                if (hasNext()){
+                    E value = current.value;
+                    current = current.next;
+                    return value;
+                }
+                return null;
+            }
+
+            @Override
+            public void remove() {
+                throw new UnsupportedOperationException("remove");
+            }
+        };
     }
 }
