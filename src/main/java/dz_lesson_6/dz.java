@@ -38,6 +38,7 @@ public class dz {
         treeSet.add(new Person(18, "Maxim"));
         treeSet.add(new Person(32, "John"));
         treeSet.add(new Person(26, "Egor"));
+        treeSet.add(new Person(14, "Bob"));
 
         for (Person person : treeSet) {
             System.out.println(person);
