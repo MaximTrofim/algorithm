@@ -5,34 +5,34 @@ public class Dz {
 
     public static void main(String[] args) {
         Graph graph = new Graph(10);
-        graph.addVertex("Тула");
-        graph.addVertex("Рязань");
-        graph.addVertex("Калуга");
+        graph.addVertex("Пенза");
+        graph.addVertex("Саратов");
+        graph.addVertex("Воронеж");
         graph.addVertex("Тамбов");
         graph.addVertex("Липецк");
-        graph.addVertex("Орел");
-        graph.addVertex("Саратов");
-        graph.addVertex("Курск");
-        graph.addVertex("Воронеж");
-        graph.addVertex("Москва");
+        graph.addVertex("Ульяновск");
+        graph.addVertex("Вольск");
+        graph.addVertex("Сердобск");
+        graph.addVertex("Нижний Новгород");
+        graph.addVertex("Волгоград");
 
-        graph.addEdge("Москва","Тула");
-        graph.addEdge("Москва","Калуга");
-        graph.addEdge("Москва","Рязань");
-        graph.addEdge("Тула","Липецк");
-        graph.addEdge("Рязань","Тамбов");
-        graph.addEdge("Калуга","Орел");
+        graph.addEdge("Пенза","Сердобск");
+        graph.addEdge("Сердобск","Вольск");
+        graph.addEdge("Вольск","Волгоград");
+
+        graph.addEdge("Пенза","Нижний Новгород");
+        graph.addEdge("Нижний Новгород","Ульяновск");
+        graph.addEdge("Ульяновск","Саратов");
+        graph.addEdge("Саратов","Волгоград");
+
+        graph.addEdge("Пенза","Тамбов");
+        graph.addEdge("Тамбов","Липецк");
         graph.addEdge("Липецк","Воронеж");
-        graph.addEdge("Тамбов","Саратов");
-        graph.addEdge("Орел","Курск");
-        graph.addEdge("Саратов","Воронеж");
-        graph.addEdge("Курск","Воронеж");
+        graph.addEdge("Воронеж","Волгоград");
 
-//        Stack<String> path = graph.findShortPathViaBfs("Москва", "Воронеж");
-//        Stack<String> path = graph.findShortPathViaBfs("Москва", "Саратов");
 //        Stack<String> path = graph.findShortPathViaBfs("Липецк", "Тамбов");
-        Stack<String> path = graph.findShortPathViaBfs("Рязань", "Курск");
-        System.out.println("\n The shortest path:");
+        Stack<String> path = graph.findShortPathViaBfs("Сердобск", "Липецк");
+        System.out.println("Самый короткий путь:");
         showShortPath(path);
     }
 
