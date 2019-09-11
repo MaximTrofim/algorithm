@@ -30,8 +30,8 @@ public class Dz {
         graph.addEdge("Липецк","Воронеж");
         graph.addEdge("Воронеж","Волгоград");
 
-//        Stack<String> path = graph.findShortPathViaBfs("Липецк", "Тамбов");
-        Stack<String> path = graph.findShortPathViaBfs("Сердобск", "Липецк");
+       Stack<String> path = graph.findShortPathViaBfs("Нижний Новгород", "Липецк");
+        //Stack<String> path = graph.findShortPathViaBfs("Сердобск", "Липецк");
         System.out.println("Самый короткий путь:");
         showShortPath(path);
     }
