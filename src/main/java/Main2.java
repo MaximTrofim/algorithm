@@ -43,7 +43,7 @@ public class Main2 {
         time1 = System.nanoTime();
         array2.sortSelect();
         time2 = System.nanoTime();
-        System.out.print("Сортировка выбором. Время в миллисекундах: ");
+        System.out.print("Сортировка_выбором. Время в миллисекундах: ");
         System.out.println(TimeUnit.NANOSECONDS.toMillis(time2 - time1));
 
         time1 = System.nanoTime();
